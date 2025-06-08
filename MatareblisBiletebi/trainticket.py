@@ -1,0 +1,290 @@
+from PyQt6 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Dialog(object):
+    def setupUi(self, Dialog):
+        Dialog.setObjectName("Dialog")
+        Dialog.resize(286, 300)
+        Dialog.setModal(False)
+        self.label = QtWidgets.QLabel(parent=Dialog)
+        self.label.setGeometry(QtCore.QRect(10, 10, 261, 41))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("../../../bog_eng_vertical.png"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
+        self.radioButton = QtWidgets.QRadioButton(parent=Dialog)
+        self.radioButton.setGeometry(QtCore.QRect(10, 60, 81, 21))
+        self.radioButton.setObjectName("radioButton")
+        self.radioButton_2 = QtWidgets.QRadioButton(parent=Dialog)
+        self.radioButton_2.setGeometry(QtCore.QRect(110, 60, 51, 21))
+        self.radioButton_2.setObjectName("radioButton_2")
+        self.radioButton_3 = QtWidgets.QRadioButton(parent=Dialog)
+        self.radioButton_3.setGeometry(QtCore.QRect(200, 60, 51, 21))
+        self.radioButton_3.setObjectName("radioButton_3")
+        self.label_2 = QtWidgets.QLabel(parent=Dialog)
+        self.label_2.setGeometry(QtCore.QRect(10, 90, 71, 16))
+        self.label_2.setObjectName("label_2")
+        self.textEdit = QtWidgets.QTextEdit(parent=Dialog)
+        self.textEdit.setGeometry(QtCore.QRect(10, 110, 221, 21))
+        self.textEdit.setObjectName("textEdit")
+        self.label_3 = QtWidgets.QLabel(parent=Dialog)
+        self.label_3.setGeometry(QtCore.QRect(10, 140, 51, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(parent=Dialog)
+        self.label_4.setGeometry(QtCore.QRect(110, 140, 61, 16))
+        self.label_4.setObjectName("label_4")
+        self.dateEdit = QtWidgets.QDateEdit(parent=Dialog)
+        self.dateEdit.setGeometry(QtCore.QRect(10, 160, 61, 21))
+        self.dateEdit.setObjectName("dateEdit")
+        self.textEdit_2 = QtWidgets.QTextEdit(parent=Dialog)
+        self.textEdit_2.setGeometry(QtCore.QRect(110, 160, 41, 21))
+        self.textEdit_2.setObjectName("textEdit_2")
+        self.label_5 = QtWidgets.QLabel(parent=Dialog)
+        self.label_5.setGeometry(QtCore.QRect(10, 200, 81, 16))
+        self.label_5.setObjectName("label_5")
+        self.lineEdit = QtWidgets.QLineEdit(parent=Dialog)
+        self.lineEdit.setGeometry(QtCore.QRect(10, 220, 91, 16))
+        self.lineEdit.setText("")
+        self.lineEdit.setObjectName("lineEdit")
+        self.pushButton = QtWidgets.QPushButton(parent=Dialog)
+        self.pushButton.setGeometry(QtCore.QRect(100, 260, 71, 21))
+        self.pushButton.setObjectName("pushButton")
+
+        self.retranslateUi(Dialog)
+        QtCore.QMetaObject.connectSlotsByName(Dialog)
+
+    def retranslateUi(self, Dialog):
+        _translate = QtCore.QCoreApplication.translate
+        Dialog.setWindowTitle(_translate("Dialog", "Payment"))
+        self.radioButton.setText(_translate("Dialog", " Mastercard"))
+        self.radioButton_2.setText(_translate("Dialog", "Visa"))
+        self.radioButton_3.setText(_translate("Dialog", " AMEX"))
+        self.label_2.setText(_translate("Dialog", "Card number"))
+        self.label_3.setText(_translate("Dialog", "Date"))
+        self.label_4.setText(_translate("Dialog", "CVC"))
+        self.label_5.setText(_translate("Dialog", "one-time code"))
+        self.pushButton.setText(_translate("Dialog", "Pay"))
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(430, 390)
+        self.centralwidget = QtWidgets.QWidget(parent=MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(10, 10, 101, 21))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(230, 10, 91, 21))
+        self.label_2.setObjectName("label_2")
+        self.textEdit = QtWidgets.QTextEdit(parent=self.centralwidget)
+        self.textEdit.setGeometry(QtCore.QRect(0, 30, 171, 21))
+        self.textEdit.setObjectName("textEdit")
+        self.textEdit_2 = QtWidgets.QTextEdit(parent=self.centralwidget)
+        self.textEdit_2.setGeometry(QtCore.QRect(230, 30, 161, 21))
+        self.textEdit_2.setObjectName("textEdit_2")
+        self.label_3 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(10, 60, 121, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(230, 60, 151, 21))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(10, 110, 131, 16))
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(230, 110, 131, 16))
+        self.label_6.setObjectName("label_6")
+        self.dateEdit = QtWidgets.QDateEdit(parent=self.centralwidget)
+        self.dateEdit.setGeometry(QtCore.QRect(10, 130, 110, 22))
+        self.dateEdit.setObjectName("dateEdit")
+        self.dateEdit_2 = QtWidgets.QDateEdit(parent=self.centralwidget)
+        self.dateEdit_2.setGeometry(QtCore.QRect(230, 130, 110, 22))
+        self.dateEdit_2.setObjectName("dateEdit_2")
+        self.label_7 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(10, 160, 101, 21))
+        self.label_7.setObjectName("label_7")
+        self.label_8 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(230, 155, 131, 31))
+        self.label_8.setObjectName("label_8")
+        self.comboBox = QtWidgets.QComboBox(parent=self.centralwidget)
+        self.comboBox.setGeometry(QtCore.QRect(10, 180, 101, 21))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox_2 = QtWidgets.QComboBox(parent=self.centralwidget)
+        self.comboBox_2.setGeometry(QtCore.QRect(230, 180, 101, 21))
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.checkBox = QtWidgets.QCheckBox(parent=self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(10, 260, 131, 21))
+        self.checkBox.setObjectName("checkBox")
+        self.label_9 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(330, 290, 71, 41))
+        self.label_9.setText("")
+        self.label_9.setPixmap(QtGui.QPixmap("../../../Georgian_Railways_logo_(2016-present).svg.png"))
+        self.label_9.setScaledContents(True)
+        self.label_9.setObjectName("label_9")
+        self.pushButton = QtWidgets.QPushButton(parent=self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(80, 300, 221, 31))
+        self.pushButton.setObjectName("pushButton")
+        self.label_10 = QtWidgets.QLabel(parent=self.centralwidget)
+        self.label_10.setGeometry(QtCore.QRect(10, 210, 71, 16))
+        self.label_10.setObjectName("label_10")
+        self.spinBox = QtWidgets.QSpinBox(parent=self.centralwidget)
+        self.spinBox.setGeometry(QtCore.QRect(10, 230, 71, 21))
+        self.spinBox.setObjectName("spinBox")
+        self.textEdit_3 = QtWidgets.QTextEdit(parent=self.centralwidget)
+        self.textEdit_3.setGeometry(QtCore.QRect(0, 80, 171, 21))
+        self.textEdit_3.setObjectName("textEdit_3")
+        self.textEdit_4 = QtWidgets.QTextEdit(parent=self.centralwidget)
+        self.textEdit_4.setGeometry(QtCore.QRect(230, 80, 171, 21))
+        self.textEdit_4.setObjectName("textEdit_4")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(parent=MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 413, 18))
+        self.menubar.setObjectName("menubar")
+        self.menusupport = QtWidgets.QMenu(parent=self.menubar)
+        self.menusupport.setObjectName("menusupport")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(parent=MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.action_2 = QtGui.QAction(parent=MainWindow)
+        self.action_2.setObjectName("action_2")
+        self.action_3 = QtGui.QAction(parent=MainWindow)
+        self.action_3.setObjectName("action_3")
+        self.menusupport.addSeparator()
+        self.menusupport.addAction(self.action_2)
+        self.menusupport.addAction(self.action_3)
+        self.menubar.addAction(self.menusupport.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label.setText(_translate("MainWindow", "სახელი/First name"))
+        self.label_2.setText(_translate("MainWindow", "გვარი/Last name"))
+        self.textEdit.setHtml(_translate("MainWindow",
+                                         "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                         "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                         "p, li { white-space: pre-wrap; }\n"
+                                         "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+                                         "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.textEdit_2.setHtml(_translate("MainWindow",
+                                           "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                           "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                           "p, li { white-space: pre-wrap; }\n"
+                                           "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+                                           "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.label_3.setText(_translate("MainWindow", "პირადი ნომერი/ID"))
+        self.label_4.setText(_translate("MainWindow", "ტელეფონის ნომერი/mobile number"))
+        self.label_5.setText(_translate("MainWindow", "გამგზავრების თარიღი/Trip date"))
+        self.label_6.setText(_translate("MainWindow", "დაბრუნების თარიღი/Return date"))
+        self.label_7.setText(_translate("MainWindow", "საწყისი პუნქტი/Start point"))
+        self.label_8.setText(_translate("MainWindow", "დანიშნულების ადგილი/Check point"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "თბილისი სამგზ"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "ბათუმი"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "ფოთი"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "ზუგდიდი"))
+        self.comboBox.setItemText(4, _translate("MainWindow", "აბაშა"))
+        self.comboBox.setItemText(5, _translate("MainWindow", "სენაკი"))
+        self.comboBox.setItemText(6, _translate("MainWindow", "ბორჯომი"))
+        self.comboBox.setItemText(7, _translate("MainWindow", "სამტრედია"))
+        self.comboBox.setItemText(8, _translate("MainWindow", "ქუთაისი"))
+        self.comboBox.setItemText(9, _translate("MainWindow", "ზესტაფონი"))
+        self.comboBox.setItemText(10, _translate("MainWindow", "გორი"))
+        self.comboBox.setItemText(11, _translate("MainWindow", "თელავი"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "თბილისი სამგზ"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "ბათუმი"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "ფოთი"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "ზუგდიდი"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "აბაშა"))
+        self.comboBox_2.setItemText(5, _translate("MainWindow", "სენაკი"))
+        self.comboBox_2.setItemText(6, _translate("MainWindow", "ბორჯომი"))
+        self.comboBox_2.setItemText(7, _translate("MainWindow", "სამტრედია"))
+        self.comboBox_2.setItemText(8, _translate("MainWindow", "ქუთაისი"))
+        self.comboBox_2.setItemText(9, _translate("MainWindow", "ზესტაფონი"))
+        self.comboBox_2.setItemText(10, _translate("MainWindow", "გორი"))
+        self.comboBox_2.setItemText(11, _translate("MainWindow", "თელავი"))
+        self.checkBox.setText(_translate("MainWindow", "ვეთანხმები პირობებს"))
+        self.pushButton.setText(_translate("MainWindow", "შენახვა და გადახდა/ Save and pay"))
+        self.label_10.setText(_translate("MainWindow", "ასაკი/Age"))
+        self.textEdit_3.setHtml(_translate("MainWindow",
+                                           "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                           "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                           "p, li { white-space: pre-wrap; }\n"
+                                           "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+                                           "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.textEdit_4.setHtml(_translate("MainWindow",
+                                           "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+                                           "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+                                           "p, li { white-space: pre-wrap; }\n"
+                                           "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:400; font-style:normal;\">\n"
+                                           "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+        self.menusupport.setTitle(_translate("MainWindow", "support"))
+        self.action_2.setText(_translate("MainWindow", "ონლაინ ჩატბოტი"))
+        self.action_3.setText(_translate("MainWindow", "ოპერატორის მოთხოვნა"))
+
+
+class MainWindow(QtWidgets.QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+
+        # Connect the button click to open the payment window
+        self.ui.pushButton.clicked.connect(self.open_payment_window)
+
+    def open_payment_window(self):
+        self.payment_dialog = QtWidgets.QDialog()
+        self.payment_ui = Ui_Dialog()
+        self.payment_ui.setupUi(self.payment_dialog)
+
+        # Connect the Pay button in the second window to show success message
+        self.payment_ui.pushButton.clicked.connect(self.show_payment_success)
+
+        self.payment_dialog.exec()
+
+    def show_payment_success(self):
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle("Payment Successful")
+        msg.setText("Ticket is bought. Payment was successful/"
+                    "ბილეთი შეძენილია. გადახდა წარმატებით შესრულდა")
+        msg.setIcon(QtWidgets.QMessageBox.Icon.Information)
+        msg.exec()
+
+        self.payment_dialog.close()
+
+
+if __name__ == "__main__":
+    import sys
+
+    app = QtWidgets.QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec())
